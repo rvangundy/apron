@@ -15,7 +15,7 @@ module.exports = function(url) {
 
                 // Reject with first error
                 if (errors) {
-                    reject(errors[0]);
+                    reject(errors[0].data.error);
                     return;
                 }
 
